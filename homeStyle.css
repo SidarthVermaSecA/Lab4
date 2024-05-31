@@ -1,0 +1,109 @@
+*{
+    font-family:monospace;
+}
+
+body{
+    background-color: #000000;
+    background-size: cover;
+}
+
+h1{
+    text-align: center;
+}
+#navigation{
+    display: flex;
+    height: 7vh;
+    width: 100%;
+    background-color: #ffffff ;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+    
+}
+nav{
+    display: contents;
+    align-items: center;
+    justify-content: center;
+}
+
+a>p{
+    font-size: xx-large;
+}
+
+a{
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #0D0D0D;
+}
+
+header{
+    position: relative;
+    text-align: center;
+    font-size: xx-large;
+    color: white;
+}
+
+.box1, .box2{
+    height: 400px;
+    width: 400px;   
+    color: rgb(0, 0, 0);
+    border-radius: 10%;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 10px 10px rgb(0, 0, 0);
+    background-color: #FFFFFF;
+}
+
+.box1{
+    animation: animated-box1 5s ease-in-out;
+    background-image: url(ufo-icon-2048x1573-d027g30s.png);
+    background-size: cover;
+}
+
+.box2{
+    animation: animated-box2 4s ease-in-out;
+}
+
+
+
+@keyframes animated-box1{
+    0% {
+        transform: translateX(-65vw);
+    }
+    100% {
+        transform: translateX(0vw);
+    }
+}
+
+@keyframes animated-box2{
+    0% {
+        transform: translateX(65vw);
+    }
+    100% {
+        transform: translateX(0vw);
+    }
+}
+
+.container{
+    display: flex;
+    height: 450px;
+    width: 100%;
+    align-items:center;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
+}
+
+.box1:active, .box2:active{
+    background: linear-gradient(145deg, rgb(64, 205, 64), rgb(112, 112, 211), rgb(222, 120, 120));
+}
+
+a:hover{
+    text-decoration: underline;
+    background-color: #000000;
+    color: white;
+}
+
+
+
