@@ -78,13 +78,12 @@ a:hover{
 }
 
 
-
-/* @keyframes movies{
+@keyframes movies{
     0% {
         transform: translateX(-65vw);
     }
     100% {
         transform: translateX(0vw);
     }
-} */
+}
 
